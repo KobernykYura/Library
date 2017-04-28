@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity;
     using System.Linq;
-
+    
     public class DataBase : DbContext
     {
         // Контекст настроен для использования строки подключения "DataBase" из файла конфигурации  
