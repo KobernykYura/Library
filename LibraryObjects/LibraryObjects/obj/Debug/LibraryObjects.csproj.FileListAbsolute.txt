@@ -1,6 +1,0 @@
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\obj\Debug\LibraryObjects.csprojResolveAssemblyReference.cache
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\bin\Debug\LibraryObjects.exe.config
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\bin\Debug\LibraryObjects.exe
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\bin\Debug\LibraryObjects.pdb
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\obj\Debug\LibraryObjects.exe
-c:\users\kober\documents\visual studio 2017\Projects\LibraryObjects\LibraryObjects\obj\Debug\LibraryObjects.pdb
