@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Common.Books
 {
-    public class BookType
+    public class BookType : ID
     {
-        public int ID { get; set; }
         public string BTypeName { get; set; }
     }
 }

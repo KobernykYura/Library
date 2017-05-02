@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace Common.Books
 {
-    public class OldBook : AbstractBook<OldBook>
+    public class ID
     {
-        public OldBook()
-        {
-
-        }
+        public int Id { get; set; }
     }
 }

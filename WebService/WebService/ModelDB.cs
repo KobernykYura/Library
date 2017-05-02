@@ -3,6 +3,8 @@
     using System;
     using System.Data.Entity;
     using System.Linq;
+    using Common.Books;
+    using Common.Readers;
 
     public class ModelDB : DbContext
     {
@@ -20,12 +22,13 @@
         // Добавьте DbSet для каждого типа сущности, который требуется включить в модель. Дополнительные сведения 
         // о настройке и использовании модели Code First см. в статье http://go.microsoft.com/fwlink/?LinkId=390109.
 
-        // public virtual DbSet<MyEntity> MyEntities { get; set; }
-    }
+        public virtual DbSet<NewBook> NewBooks { get; set; }
+        public virtual DbSet<OldBook> OldBooks { get; set; }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+        public virtual DbSet<Reader> Readers { get; set; }
+
+        public virtual DbSet<> OldBooks { get; set; }
+
+
+    }
 }

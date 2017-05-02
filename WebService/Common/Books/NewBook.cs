@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common
+namespace Common.Books
 {
-    class NewBook : AbstractBook<NewBook>
+    public class NewBook : AbstractBook<NewBook>
     {
         public NewBook()
         {

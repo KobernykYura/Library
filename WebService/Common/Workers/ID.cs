@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Books
+namespace Common.Workers
 {
-    public class OldBook : AbstractBook<OldBook>
+    class ID
     {
-        public OldBook()
-        {
-
-        }
+        public int Id { get; set; }
     }
 }
