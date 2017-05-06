@@ -8,9 +8,13 @@ namespace Common.Books
 {
     public class NewBook : AbstractBook<NewBook>
     {
-        public NewBook()
-        {
-
-        }
+        /// <summary>
+        /// New design for new book.
+        /// </summary>
+        public string ModernDesign { get; set; }
+        /// <summary>
+        /// New material for new book.
+        /// </summary>
+        public string ModernMaterial { get; set; }
     }
 }
