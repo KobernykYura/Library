@@ -6,6 +6,8 @@
     using Common.Books;
     using Common.Readers;
     using Common.Workers;
+    using Common.LoginData;
+    using System.Collections.Generic;
 
     /// <summary>
     /// Model of Data base from code.
@@ -18,13 +20,13 @@
         // 
         // Если требуется выбрать другую базу данных или поставщик базы данных, измените строку подключения "ModelDB" 
         // в файле конфигурации приложения.
+        /// <summary>
+        /// ModelDB();
+        /// </summary>
         public ModelDB()
             : base("name=ModelDB")
         {
         }
-
-        // Добавьте DbSet для каждого типа сущности, который требуется включить в модель. Дополнительные сведения 
-        // о настройке и использовании модели Code First см. в статье http://go.microsoft.com/fwlink/?LinkId=390109.
 
         /// <summary>
         /// Table for new books.
@@ -41,8 +43,46 @@
         /// <summary>
         /// Table for Workers.
         /// </summary>
-        public virtual DbSet<> Workers { get; set; }
+        public virtual DbSet<Worker> Workers { get; set; }
+        /// <summary>
+        /// Table for Departments.
+        /// </summary>
+        public virtual DbSet<Department> Departments { get; set; }
+        /// <summary>
+        /// Table for Logins.
+        /// </summary>
+        public virtual DbSet<LoginData> Logins { get; set; }
+    }
+    class StructureContextInitializer : DropCreateDatabaseIfModelChanges<ModelDB>
+    {
+        protected override void Seed(ModelDB context)
+        {
 
+            context.Departments.AddRange(new List<Department>()
+            {
+                new Department{ Name = "Отдел IT"},
+                new Department{ Name = "Отдел продаж"},
+                new Department{ Name = "Отдел рекламы"},
+                new Department{ Name = "Канцелярия"},
+            });
 
+            context.SaveChanges();
+
+            context.Workers.AddRange(new List<Worker>()
+            {
+                new Worker{Name = "Александр В", Age = 26, Salary = 45000m, DepartmentID = context.Departments.Where(x => x.Id == 1).FirstOrDefault()},
+                new Worker{Name = "Игорь Б", Age = 31, Salary = 47000m, DepartmentID = context.Departments.Where(x => x.Id == 2).FirstOrDefault()},
+                new Worker{Name = "Сергей К", Age = 28, Salary = 31000m, DepartmentID = context.Departments.Where(x => x.Id == 2).FirstOrDefault()},
+                new Worker{Name = "Иван П", Age = 23, Salary = 35000m, DepartmentID = context.Departments.Where(x => x.Id == 3).FirstOrDefault()},
+                new Worker{Name = "Алексей Д", Age = 31, Salary = 35000m, DepartmentID = context.Departments.Where(x => x.Id == 3).FirstOrDefault()},
+                new Worker{Name = "Светлана И", Age = 26, Salary = 65000m, DepartmentID = context.Departments.Where(x => x.Id == 1).FirstOrDefault()},
+                new Worker{Name = "Инна К", Age = 24, Salary = 50000m, DepartmentID = context.Departments.Where(x => x.Id == 4).FirstOrDefault()},
+                new Worker{Name = "Антон Ж", Age = 29, Salary = 45000m, DepartmentID = context.Departments.Where(x => x.Id == 2).FirstOrDefault()},
+                new Worker{Name = "Степан С", Age = 28, Salary = 43000m, DepartmentID = context.Departments.Where(x => x.Id == 3).FirstOrDefault()},
+                new Worker{Name = "Кристина У", Age = 23, Salary = 32000m, DepartmentID = context.Departments.Where(x => x.Id == 4).FirstOrDefault()},
+            });
+
+            context.SaveChanges();
+        }
     }
 }

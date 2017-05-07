@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
 namespace Common.Workers
 {
-    class Worker : ID
+    [Table("Workers")]
+    public class Worker : ID
     {
         /// <summary>
         /// Worker's name.
@@ -25,5 +27,9 @@ namespace Common.Workers
         /// Id of worker's department.
         /// </summary>
         public Department DepartmentID;
+        /// <summary>
+        /// Age of worker.
+        /// </summary>
+        public int Age;
     }
 }

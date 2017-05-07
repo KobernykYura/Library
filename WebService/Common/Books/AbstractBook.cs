@@ -9,7 +9,7 @@ namespace Common.Books
     /// <summary>
     /// Abstract class for books. Parent class for book classes.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="T">Abstract type.</typeparam>
     abstract public class AbstractBook<T> : ID
     {
         /// <summary>

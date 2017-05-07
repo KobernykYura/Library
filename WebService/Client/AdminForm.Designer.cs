@@ -43,7 +43,7 @@
             this.readerchange = new System.Windows.Forms.Button();
             this.adddep = new System.Windows.Forms.Button();
             this.viewworkers = new System.Windows.Forms.Button();
-            this.clientform = new System.Windows.Forms.Button();
+            this.loginclient = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readersdataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksdataGrid)).BeginInit();
@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.Controls.Add(this.readerchange, 2, 6);
             this.tableLayoutPanel1.Controls.Add(this.adddep, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.viewworkers, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.clientform, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.loginclient, 9, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -237,16 +237,16 @@
             this.viewworkers.Text = "View workers list";
             this.viewworkers.UseVisualStyleBackColor = true;
             // 
-            // clientform
+            // loginclient
             // 
-            this.clientform.Dock = System.Windows.Forms.DockStyle.Right;
-            this.clientform.Location = new System.Drawing.Point(1228, 3);
-            this.clientform.Name = "clientform";
-            this.tableLayoutPanel1.SetRowSpan(this.clientform, 9);
-            this.clientform.Size = new System.Drawing.Size(73, 421);
-            this.clientform.TabIndex = 14;
-            this.clientform.Text = "Client";
-            this.clientform.UseVisualStyleBackColor = true;
+            this.loginclient.Dock = System.Windows.Forms.DockStyle.Right;
+            this.loginclient.Location = new System.Drawing.Point(1228, 3);
+            this.loginclient.Name = "loginclient";
+            this.tableLayoutPanel1.SetRowSpan(this.loginclient, 9);
+            this.loginclient.Size = new System.Drawing.Size(73, 421);
+            this.loginclient.TabIndex = 14;
+            this.loginclient.Text = "Client";
+            this.loginclient.UseVisualStyleBackColor = true;
             // 
             // AdminForm
             // 
@@ -281,6 +281,6 @@
         private System.Windows.Forms.Button readerchange;
         private System.Windows.Forms.Button adddep;
         private System.Windows.Forms.Button viewworkers;
-        private System.Windows.Forms.Button clientform;
+        private System.Windows.Forms.Button loginclient;
     }
 }

@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
-using System.Threading.Tasks;
 
 namespace Common.Workers
 {
-    class Department : ID
+    [Table("Departments")]
+    public class Department : ID
     {
         /// <summary>
         /// Name for department.

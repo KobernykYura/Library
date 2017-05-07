@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Services;
+using Controllers;
 
 namespace WebService
 {
@@ -16,11 +17,24 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
+        Controller contr;
+
 
         [WebMethod]
         public string HelloWorld()
         {
             return "Привет всем!";
+        }
+        /// <summary>
+        /// Web method for check login and password.
+        /// </summary>
+        /// <param name="l">Login.</param>
+        /// <param name="p">Password.</param>
+        /// <returns></returns>
+        [WebMethod]
+        public bool CheckLogin(string l, string p)
+        {
+            return contr.ContrCheckLog(p: p, l: l);
         }
     }
 }
