@@ -14,18 +14,13 @@
     /// </summary>
     public class ModelDB : DbContext
     {
-        // Контекст настроен для использования строки подключения "ModelDB" из файла конфигурации  
-        // приложения (App.config или Web.config). По умолчанию эта строка подключения указывает на базу данных 
-        // "WebService.ModelDB" в экземпляре LocalDb. 
-        // 
-        // Если требуется выбрать другую базу данных или поставщик базы данных, измените строку подключения "ModelDB" 
-        // в файле конфигурации приложения.
         /// <summary>
         /// ModelDB();
         /// </summary>
         public ModelDB()
             : base("name=ModelDB")
         {
+            Database.SetInitializer(new StructureContextInitializer());
         }
 
         /// <summary>
@@ -64,6 +59,16 @@
                 new Department{ Name = "Отдел продаж"},
                 new Department{ Name = "Отдел рекламы"},
                 new Department{ Name = "Канцелярия"},
+            });
+
+            context.SaveChanges();
+
+            context.Logins.AddRange(new List<LoginData>()
+            {
+                new LoginData{ Login = "root", Password = "1111"},
+                new LoginData{ Login = "user", Password = "2222"},
+                new LoginData{ Login = "press", Password = "2222"},
+                new LoginData{ Login = "user1", Password = "1111"},
             });
 
             context.SaveChanges();

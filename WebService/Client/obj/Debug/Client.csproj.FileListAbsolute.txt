@@ -1,0 +1,12 @@
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.AddDepartment.resources
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.AdminForm.resources
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.ClientForm.resources
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.Login.resources
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.Properties.Resources.resources
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Client.exe.config
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Client.exe
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Client.pdb
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.exe
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.pdb

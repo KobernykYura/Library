@@ -44,6 +44,7 @@
             this.adddep = new System.Windows.Forms.Button();
             this.viewworkers = new System.Windows.Forms.Button();
             this.loginclient = new System.Windows.Forms.Button();
+            this.viewreders = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.readersdataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksdataGrid)).BeginInit();
@@ -77,6 +78,7 @@
             this.tableLayoutPanel1.Controls.Add(this.adddep, 1, 8);
             this.tableLayoutPanel1.Controls.Add(this.viewworkers, 2, 8);
             this.tableLayoutPanel1.Controls.Add(this.loginclient, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.viewreders, 3, 8);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -248,6 +250,16 @@
             this.loginclient.Text = "Client";
             this.loginclient.UseVisualStyleBackColor = true;
             // 
+            // viewreders
+            // 
+            this.viewreders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.viewreders.Location = new System.Drawing.Point(393, 379);
+            this.viewreders.Name = "viewreders";
+            this.viewreders.Size = new System.Drawing.Size(124, 45);
+            this.viewreders.TabIndex = 15;
+            this.viewreders.Text = "View readers list";
+            this.viewreders.UseVisualStyleBackColor = true;
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.Button adddep;
         private System.Windows.Forms.Button viewworkers;
         private System.Windows.Forms.Button loginclient;
+        private System.Windows.Forms.Button viewreders;
     }
 }

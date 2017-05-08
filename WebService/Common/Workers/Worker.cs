@@ -30,6 +30,6 @@ namespace Common.Workers
         /// <summary>
         /// Age of worker.
         /// </summary>
-        public int Age;
+        public int? Age;
     }
 }

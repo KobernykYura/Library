@@ -17,12 +17,14 @@ namespace Common.Readers
         [DisplayName("Пол читателя")]
         public string Sex { get; set; }
 
-        public string Mounth { get; set; }
-        public int Day { get; set; }
-        public int Year { get; set; }
+        public int? Mounth { get; set; }
+        public int? Day { get; set; }
+        public int? Year { get; set; }
         [DisplayName("Дата регистрации")]
+        [NotMapped]
         public string RegistrationDate => $"{Day}.{Mounth}.{Year}";
         [DisplayName("ФИО")]
+        [NotMapped]
         public string FullName => $"{Name} {SecoundName}";
     }
 }

@@ -19,7 +19,10 @@ namespace WebService
     {
         Controller contr;
 
-
+        /// <summary>
+        /// Hello world.
+        /// </summary>
+        /// <returns></returns>
         [WebMethod]
         public string HelloWorld()
         {
@@ -34,6 +37,7 @@ namespace WebService
         [WebMethod]
         public bool CheckLogin(string l, string p)
         {
+            contr = new Controller();
             return contr.ContrCheckLog(p: p, l: l);
         }
     }

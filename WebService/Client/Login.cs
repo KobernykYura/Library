@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,24 +8,35 @@ namespace Client
 {
     public partial class Login : Form
     {
+        Service.WebServiceSoapClient serv;
+        AdminForm adm;
+        Login log;
+
         public Login()
         {
             InitializeComponent();
+            serv = new Service.WebServiceSoapClient();
         }
 
-        private void button1_Click(object sender, FormClosingEventArgs e)
+        private void LoginIn_Click(object sender, EventArgs e)
         {
-            string login = textBoxLogin.Text;
-            string password = textBoxPassword.Text;
+            string login = textBoxlogin.Text;
+            string password = textBoxpassword.Text;
             //DialogResult res;
 
-            if (CheckLogin(login, password)) new AdminForm(); 
-            else DialogWindow();
+            bool condition = serv.CheckLogin(login, password);
+            if (condition)
+            {
+                Hide();
+                adm = new AdminForm();
+                adm.Show();
+            }
+            else DialogWindow();      
         }
-        private void DialogWindow()
-        {
-            var  res = MessageBox.Show("Incorrect password or login. Try once again!", "Invalid login", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            if (res == DialogResult.OK) Close();
-        }
+            private void DialogWindow()
+            {
+                var res = MessageBox.Show("Incorrect password or login. Try once again!", "Invalid login", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (res == DialogResult.OK) { textBoxlogin.Text = ""; textBoxpassword.Text = ""; }
+            }
     }
 }

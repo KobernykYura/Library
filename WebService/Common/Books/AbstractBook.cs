@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Common.Books
 {
@@ -12,21 +12,12 @@ namespace Common.Books
     /// <typeparam name="T">Abstract type.</typeparam>
     abstract public class AbstractBook<T> : ID
     {
-        /// <summary>
-        /// Book raiting list.
-        /// </summary>
-        List<BookRating> rating;
+        //[NotMapped]
+        ///// <summary>
+        ///// Book raiting list.
+        ///// </summary>
+        //List<BookRating> rating;
 
-        enum BookRating
-        {
-            zerostar,
-            onestar,
-            twostar,
-            threestar,
-            fourstar,
-            fivestar,
-            expra = 10
-        }
         /// <summary>
         /// Book name.
         /// </summary>
