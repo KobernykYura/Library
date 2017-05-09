@@ -9,8 +9,7 @@ namespace Client
     public partial class Login : Form
     {
         Service.WebServiceSoapClient serv;
-        AdminForm adm;
-        Login log;
+        Form form;
 
         public Login()
         {
@@ -24,12 +23,14 @@ namespace Client
             string password = textBoxpassword.Text;
             //DialogResult res;
 
-            bool condition = serv.CheckLogin(login, password);
-            if (condition)
+            var condition = serv.CheckLogin(login, password);
+            if (condition.mean)
             {
+                
                 Hide();
-                adm = new AdminForm();
-                adm.Show();
+                if (condition.MeanID == 1) form = new AdminForm();
+                else form = new ClientForm();
+                form.Show();
             }
             else DialogWindow();      
         }

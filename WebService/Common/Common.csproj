@@ -49,6 +49,7 @@
     <Compile Include="Books\ID.cs" />
     <Compile Include="Books\NewBook.cs" />
     <Compile Include="Books\OldBook.cs" />
+    <Compile Include="CheckLoginRes\ResLog.cs" />
     <Compile Include="LoginData\ID.cs" />
     <Compile Include="LoginData\LoginData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

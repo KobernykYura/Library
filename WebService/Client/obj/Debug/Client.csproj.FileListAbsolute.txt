@@ -10,3 +10,5 @@ C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Client.pdb
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.exe
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\obj\Debug\Client.pdb
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Common.dll
+C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Client\bin\Debug\Common.pdb

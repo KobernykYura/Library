@@ -16,5 +16,12 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        private void loginclient_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Login form = new Login();
+            form.Show();
+        }
     }
 }

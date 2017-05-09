@@ -23,10 +23,16 @@
       <s:element name="CheckLoginResponse">
         <s:complexType>
           <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="CheckLoginResult" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="CheckLoginResult" type="tns:ResLog" />
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:complexType name="ResLog">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="mean" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MeanID" type="s:int" />
+        </s:sequence>
+      </s:complexType>
     </s:schema>
   </wsdl:types>
   <wsdl:message name="HelloWorldSoapIn">

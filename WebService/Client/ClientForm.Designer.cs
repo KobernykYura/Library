@@ -196,13 +196,14 @@
             // loginadmin
             // 
             this.loginadmin.Dock = System.Windows.Forms.DockStyle.Right;
-            this.loginadmin.Location = new System.Drawing.Point(1256, 3);
+            this.loginadmin.Location = new System.Drawing.Point(1245, 3);
             this.loginadmin.Name = "loginadmin";
             this.tableLayoutPanel1.SetRowSpan(this.loginadmin, 9);
-            this.loginadmin.Size = new System.Drawing.Size(53, 446);
+            this.loginadmin.Size = new System.Drawing.Size(64, 446);
             this.loginadmin.TabIndex = 10;
-            this.loginadmin.Text = "Admin";
+            this.loginadmin.Text = "ReLogin";
             this.loginadmin.UseVisualStyleBackColor = true;
+            this.loginadmin.Click += new System.EventHandler(this.loginadmin_Click);
             // 
             // ClientForm
             // 

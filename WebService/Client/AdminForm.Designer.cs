@@ -247,8 +247,9 @@
             this.tableLayoutPanel1.SetRowSpan(this.loginclient, 9);
             this.loginclient.Size = new System.Drawing.Size(73, 421);
             this.loginclient.TabIndex = 14;
-            this.loginclient.Text = "Client";
+            this.loginclient.Text = "ReLogin";
             this.loginclient.UseVisualStyleBackColor = true;
+            this.loginclient.Click += new System.EventHandler(this.loginclient_Click);
             // 
             // viewreders
             // 

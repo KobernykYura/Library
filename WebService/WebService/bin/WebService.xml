@@ -57,6 +57,11 @@
             Table for Logins.
             </summary>
         </member>
+        <member name="P:WebService.ModelDB.BookTypes">
+            <summary>
+            Table for BookTypes.
+            </summary>
+        </member>
         <member name="T:WebService.WebService">
             <summary>
             Сводное описание для WebService

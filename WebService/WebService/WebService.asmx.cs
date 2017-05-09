@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Controllers;
+using Common.CheckLoginRes;
 
 namespace WebService
 {
@@ -35,7 +36,7 @@ namespace WebService
         /// <param name="p">Password.</param>
         /// <returns></returns>
         [WebMethod]
-        public bool CheckLogin(string l, string p)
+        public ResLog CheckLogin(string l, string p)
         {
             contr = new Controller();
             return contr.ContrCheckLog(p: p, l: l);

@@ -31,8 +31,8 @@ namespace Common.Books
         /// </summary>
         public decimal Price { get; set; }
         /// <summary>
-        /// Type of book.
+        /// Year of book printing. 
         /// </summary>
-        public BookType BookType { get; set; }
+        public int? Year { get; set; }
     }
 }

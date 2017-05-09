@@ -9,7 +9,7 @@ namespace Common.LoginData
 {
     public class ID
     {
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Key]
         public int Id { get; set; }
     }
 }

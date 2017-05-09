@@ -9,7 +9,68 @@
 //------------------------------------------------------------------------------
 
 namespace Client.Service {
+    using System.Runtime.Serialization;
+    using System;
     
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="ResLog", Namespace="http://tempuri.org/")]
+    [System.SerializableAttribute()]
+    public partial class ResLog : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        private bool meanField;
+        
+        private int MeanIDField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true)]
+        public bool mean {
+            get {
+                return this.meanField;
+            }
+            set {
+                if ((this.meanField.Equals(value) != true)) {
+                    this.meanField = value;
+                    this.RaisePropertyChanged("mean");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(IsRequired=true, Order=1)]
+        public int MeanID {
+            get {
+                return this.MeanIDField;
+            }
+            set {
+                if ((this.MeanIDField.Equals(value) != true)) {
+                    this.MeanIDField = value;
+                    this.RaisePropertyChanged("MeanID");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Service.WebServiceSoap")]
@@ -152,13 +213,13 @@ namespace Client.Service {
     [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
     public partial class CheckLoginResponseBody {
         
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool CheckLoginResult;
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public Client.Service.ResLog CheckLoginResult;
         
         public CheckLoginResponseBody() {
         }
         
-        public CheckLoginResponseBody(bool CheckLoginResult) {
+        public CheckLoginResponseBody(Client.Service.ResLog CheckLoginResult) {
             this.CheckLoginResult = CheckLoginResult;
         }
     }
@@ -218,7 +279,7 @@ namespace Client.Service {
             return base.Channel.CheckLogin(request);
         }
         
-        public bool CheckLogin(string l, string p) {
+        public Client.Service.ResLog CheckLogin(string l, string p) {
             Client.Service.CheckLoginRequest inValue = new Client.Service.CheckLoginRequest();
             inValue.Body = new Client.Service.CheckLoginRequestBody();
             inValue.Body.l = l;

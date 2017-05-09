@@ -17,5 +17,9 @@ namespace Common.Books
         /// New material for new book.
         /// </summary>
         public string ModernMaterial { get; set; }
+        /// <summary>
+        /// Type of book.
+        /// </summary>
+        public BookType BookType { get; set; }
     }
 }
