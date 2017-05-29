@@ -4,7 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Controllers;
+using Common.Readers;
+using Common.Workers;
 using Common.CheckLoginRes;
+using WebService.Controllers;
 
 namespace WebService
 {
@@ -18,8 +21,9 @@ namespace WebService
     // [System.Web.Script.Services.ScriptService]
     public class WebService : System.Web.Services.WebService
     {
-        Controller contr;
-
+        LoginController contr;
+        ReadersController contrRead;
+        WorkersController contrWork;
         /// <summary>
         /// Hello world.
         /// </summary>
@@ -38,8 +42,28 @@ namespace WebService
         [WebMethod]
         public ResLog CheckLogin(string l, string p)
         {
-            contr = new Controller();
+            contr = new LoginController();
             return contr.ContrCheckLog(p: p, l: l);
+        }
+        /// <summary>
+        /// Load workers from DB.
+        /// </summary>
+        /// <returns></returns>
+        [WebMethod]
+        public List<Reader> LoadReaders()
+        {
+            contrRead = new ReadersController();
+            return contrRead.GetList();
+        }
+        /// <summary>
+        /// Load readers from DB.
+        /// </summary>
+        /// <returns></returns>
+        [WebMethod]
+        public List<Worker> LoadWorkers()
+        {
+            contrWork = new WorkersController();
+            return contrWork.GetList();
         }
     }
 }

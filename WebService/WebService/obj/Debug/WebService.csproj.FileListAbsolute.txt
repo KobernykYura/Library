@@ -44,3 +44,7 @@ C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\WebService\
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\WebService\obj\Debug\WebService.dll
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\WebService\obj\Debug\WebService.pdb
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\WebService\bin\Controllers.dll.config
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\WebService\bin\WebService.xml
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\WebService\obj\Debug\WebService.dll
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\WebService\obj\Debug\WebService.pdb

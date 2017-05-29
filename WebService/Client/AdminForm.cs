@@ -1,17 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
 {
     public partial class AdminForm : Form
     {
+        Service.WebServiceSoapClient serv;
+
         public AdminForm()
         {
             InitializeComponent();
@@ -22,6 +17,18 @@ namespace Client
             Hide();
             Login form = new Login();
             form.Show();
+        }
+
+        private void viewworkers_Click(object sender, EventArgs e)
+        {
+            label2.Text = "Workers";
+            personsdataGrid.DataSource = serv.LoadWorkers();
+        }
+
+        private void viewreders_Click(object sender, EventArgs e)
+        {
+            label2.Text = "Readers";
+            personsdataGrid.DataSource = serv.LoadReaders();
         }
     }
 }

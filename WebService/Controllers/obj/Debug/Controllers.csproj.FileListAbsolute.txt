@@ -6,3 +6,11 @@ C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Controllers
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\obj\Debug\Controllers.dll
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\obj\Debug\Controllers.pdb
 C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Controllers.dll.config
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Controllers.dll
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Controllers.pdb
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Common.dll
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\bin\Debug\Common.pdb
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\obj\Debug\Controllers.csprojResolveAssemblyReference.cache
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\obj\Debug\Controllers.dll
+C:\Users\Root\OneDrive\Дакументы\GitHub\Library\WebService\Controllers\obj\Debug\Controllers.pdb

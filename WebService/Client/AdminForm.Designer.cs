@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.readersdataGrid = new System.Windows.Forms.DataGridView();
+            this.personsdataGrid = new System.Windows.Forms.DataGridView();
             this.booksdataGrid = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,7 +46,7 @@
             this.loginclient = new System.Windows.Forms.Button();
             this.viewreders = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.readersdataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personsdataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksdataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +63,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0001F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.0001F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.9991F));
-            this.tableLayoutPanel1.Controls.Add(this.readersdataGrid, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.personsdataGrid, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.booksdataGrid, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
@@ -95,16 +95,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1304, 427);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // readersdataGrid
+            // personsdataGrid
             // 
-            this.readersdataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tableLayoutPanel1.SetColumnSpan(this.readersdataGrid, 3);
-            this.readersdataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.readersdataGrid.Location = new System.Drawing.Point(133, 50);
-            this.readersdataGrid.Name = "readersdataGrid";
-            this.tableLayoutPanel1.SetRowSpan(this.readersdataGrid, 5);
-            this.readersdataGrid.Size = new System.Drawing.Size(384, 229);
-            this.readersdataGrid.TabIndex = 0;
+            this.personsdataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.tableLayoutPanel1.SetColumnSpan(this.personsdataGrid, 3);
+            this.personsdataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.personsdataGrid.Location = new System.Drawing.Point(133, 50);
+            this.personsdataGrid.Name = "personsdataGrid";
+            this.tableLayoutPanel1.SetRowSpan(this.personsdataGrid, 5);
+            this.personsdataGrid.Size = new System.Drawing.Size(384, 229);
+            this.personsdataGrid.TabIndex = 0;
             // 
             // booksdataGrid
             // 
@@ -238,6 +238,7 @@
             this.viewworkers.TabIndex = 13;
             this.viewworkers.Text = "View workers list";
             this.viewworkers.UseVisualStyleBackColor = true;
+            this.viewworkers.Click += new System.EventHandler(this.viewworkers_Click);
             // 
             // loginclient
             // 
@@ -260,6 +261,7 @@
             this.viewreders.TabIndex = 15;
             this.viewreders.Text = "View readers list";
             this.viewreders.UseVisualStyleBackColor = true;
+            this.viewreders.Click += new System.EventHandler(this.viewreders_Click);
             // 
             // AdminForm
             // 
@@ -271,7 +273,7 @@
             this.Text = "AdminForm";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.readersdataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.personsdataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksdataGrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -280,7 +282,7 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.DataGridView readersdataGrid;
+        private System.Windows.Forms.DataGridView personsdataGrid;
         private System.Windows.Forms.DataGridView booksdataGrid;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

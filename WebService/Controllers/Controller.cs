@@ -17,8 +17,7 @@ namespace Controllers
 
             foreach (var item in adminlogindata)
             {
-                
-                if (item.Login == l && item.Password == p) mean = true;
+                if (mean = item.Login.Equals(l) && item.Password.Equals(p)) mean = true;
             }
 
             return mean;
