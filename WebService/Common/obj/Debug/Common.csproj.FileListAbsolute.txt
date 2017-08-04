@@ -1,5 +1,0 @@
-C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Common\bin\Debug\Common.dll
-C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Common\bin\Debug\Common.pdb
-C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
-C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Common\obj\Debug\Common.dll
-C:\Users\kober\OneDrive\Дакументы\GitHub\Library\WebService\Common\obj\Debug\Common.pdb

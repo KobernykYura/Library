@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Common.LoginData;
 using Common.CheckLoginRes;
-using Common.Readers;
-using Common.Workers;
 
 namespace WebService
 {
     /// <summary>
     /// Controller.
     /// </summary>
-    public class LoginController
+    public class Controller
     {
         private ModelDB dball = new ModelDB();
+        List<LoginData> adminlogindata;
         ResLog reslog = new ResLog();
 
         /// <summary>
@@ -26,7 +22,7 @@ namespace WebService
         public ResLog ContrCheckLog(string l, string p)
         {
             dball = new ModelDB();
-            List<LoginData>  adminlogindata = new List<LoginData>();
+            adminlogindata = new List<LoginData>();
             adminlogindata.AddRange(dball.Logins);
 
             reslog.mean = false;

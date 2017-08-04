@@ -65,7 +65,7 @@
     <Compile Include="ClientForm.Designer.cs">
       <DependentUpon>ClientForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Connected Services\Service\Reference.cs">
+    <Compile Include="Connected Services\LibServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
@@ -99,16 +99,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="Connected Services\Service\Client.Service.CheckLoginResponse.datasource">
+    <None Include="Connected Services\LibServiceReference\Client.LibServiceReference.CheckLoginResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Service\Client.Service.HelloWorldResponse.datasource">
+    <None Include="Connected Services\LibServiceReference\Client.LibServiceReference.HelloWorldResponse.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Service\Client.Service.ResLog.datasource">
+    <None Include="Connected Services\LibServiceReference\Client.LibServiceReference.ResLog.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
-    <None Include="Connected Services\Service\WebService.wsdl" />
+    <None Include="Connected Services\LibServiceReference\WebLibService.wsdl" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,19 +132,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\Service\" />
+    <WCFMetadataStorage Include="Connected Services\LibServiceReference\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service\WebService.disco" />
+    <None Include="Connected Services\LibServiceReference\WebLibService.disco" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service\configuration91.svcinfo" />
+    <None Include="Connected Services\LibServiceReference\configuration91.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service\configuration.svcinfo" />
+    <None Include="Connected Services\LibServiceReference\configuration.svcinfo" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Connected Services\Service\Reference.svcmap">
+    <None Include="Connected Services\LibServiceReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>

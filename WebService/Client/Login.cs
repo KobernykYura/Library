@@ -1,20 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Client
 {
     public partial class Login : Form
     {
-        Service.WebServiceSoapClient serv;
+        LibServiceReference.WebServiceSoapClient serv;
         Form form;
 
         public Login()
         {
             InitializeComponent();
-            serv = new Service.WebServiceSoapClient();
+            serv = new LibServiceReference.WebServiceSoapClient();
         }
 
         private void LoginIn_Click(object sender, EventArgs e)
