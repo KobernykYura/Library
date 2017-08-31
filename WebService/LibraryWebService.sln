@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibWebService", "WebService\LibWebService.csproj", "{02D61971-F986-449E-8A59-817C6E393522}"
 EndProject
@@ -13,11 +13,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csp
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controllers", "Controllers\Controllers.csproj", "{74D6AA78-A23B-4CC7-97D9-C0F2A0CF1A07}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWPF", "ClientWPF\ClientWPF.csproj", "{E61E9900-51DE-46AB-859B-427CA7089703}"
-	ProjectSection(ProjectDependencies) = postProject
-		{02D61971-F986-449E-8A59-817C6E393522} = {02D61971-F986-449E-8A59-817C6E393522}
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,15 +36,8 @@ Global
 		{74D6AA78-A23B-4CC7-97D9-C0F2A0CF1A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D6AA78-A23B-4CC7-97D9-C0F2A0CF1A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D6AA78-A23B-4CC7-97D9-C0F2A0CF1A07}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E61E9900-51DE-46AB-859B-427CA7089703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E61E9900-51DE-46AB-859B-427CA7089703}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E61E9900-51DE-46AB-859B-427CA7089703}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E61E9900-51DE-46AB-859B-427CA7089703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {AE168401-320F-4721-9716-F7B7B2AD7B8C}
 	EndGlobalSection
 EndGlobal
