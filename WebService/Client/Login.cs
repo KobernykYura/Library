@@ -23,7 +23,6 @@ namespace Client
             var condition = serv.CheckLogin(login, password);
             if (condition.mean)
             {
-                
                 Hide();
                 if (condition.MeanID == 1) form = new AdminForm();
                 else form = new ClientForm();
